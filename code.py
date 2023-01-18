@@ -4,12 +4,12 @@ import asyncio
 
 # Pixels
 total_pixels = 276
+# one stripe has 46 pixels, 92 equals whole shelf == 2 strips.
 shelf_length = 46
 # Multiplies dots by 10, this means the animation strip length is 10 leds
 animation_length = 10
 
 pixels = neopixel.NeoPixel(board.GP28, total_pixels, brightness=0.2, auto_write=False)
-# one stripe has 46 pixels, 92 equals whole shelf == 2 strips.
 
 
 # shelf_number means which shelf is chosen
